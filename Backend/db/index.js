@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // Connect to MongoDB
 mongoose.connect(
-  "mongodb+srv://ashitam03:mongodb2024@cluster0.m9nxqx7.mongodb.net/CoursePurchase"
+"mongodb connection string"
 );
 
 // Define schemas
