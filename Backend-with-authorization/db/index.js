@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://ashitam03:mongodb2024@cluster0.m9nxqx7.mongodb.net/Auth-Course-selling"
+  "your cluster"
 );
 
 const AdminSchema = new mongoose.Schema({
