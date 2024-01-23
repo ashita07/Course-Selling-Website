@@ -1,11 +1,12 @@
 const jwt = require("jsonwebtoken")
-const secret = require("../main-port")
+const {jwt_secret}=require("../config")
+
 
 function userMiddleware(req,res,next){
   const token =req.headers.authorization;
   const words = token.split(" ");
   const jwtToken = words[1];
-  const decodedValue = jwt.verify(jwtToken , secret);
+  const decodedValue = jwt.verify(jwtToken , jwt_secret);
   if(decodedValue.username){
     next();
   }else {

@@ -4,8 +4,6 @@ const app = express();
 const adminRouter = require("./routes/admin")
 const userRouter = require("./routes/user")
 
-const jwt_secret = "sellcourse"
-
 app.use(bodyParser.json());
 
 app.use("/admin",adminRouter)
@@ -16,4 +14,3 @@ app.listen(PORT,()=>{
     console.log(`server is running on port ${PORT}`)
 })
 
-module.exports=jwt_secret;
